@@ -1,0 +1,40 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "C:\\WEB3\\ChaiDApp\\contracts\\chai.sol": {
+      "lastModificationDate": 1685990619580,
+      "contentHash": "35375f1402bebba3df0b7302934a2da4",
+      "sourceName": "contracts/chai.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.2 <0.9.0"
+      ],
+      "artifacts": [
+        "chai"
+      ]
+    }
+  }
+}
