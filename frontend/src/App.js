@@ -26,7 +26,7 @@ export default function App() {
         const { ethereum } = window;
 
         if (ethereum) {
-          const account = await ethereum.request({
+          var account = await ethereum.request({
             method: "eth_requestAccounts",
           });
 
@@ -56,7 +56,7 @@ export default function App() {
       }
     }
     connectWallet()
-  })
+  },[account])
 
 
   return (
@@ -66,10 +66,10 @@ export default function App() {
           <h1 className='m-2' style={{'color':'blueviolet'}}>My First DApp</h1>
           <h3>Buy me a Chai</h3>
           <img className='rounded mx-auto d-block' src="/images/chai1.avif" alt="coffee" height={"auto"} width={"200px"} />
+          <h4>Connected Account : {account}</h4>
         </div>
         <div style={{'backgroundImage':'url(/images/eth2.png)',"backgroundRepeat":"no-repeat","backgroundSize":"contain",'backgroundPosition': 'center'}}>
           <Buy state={state}></Buy>
-          
         </div>
           <Memo state={state}></Memo>
       </div>
