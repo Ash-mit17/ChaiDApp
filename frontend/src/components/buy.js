@@ -26,6 +26,7 @@ export default function Buy({state}) {
               className="form-control"
               id="name"
               placeholder="Enter Your Name"
+              autoComplete='off'
             />
           </div>
           <div className="mb-3">
@@ -35,6 +36,7 @@ export default function Buy({state}) {
               className="form-control"
               id="msg"
               placeholder="Enter Your Message"
+              autoComplete='off'
             />
           </div>
           <div className="mb-3">
@@ -44,6 +46,7 @@ export default function Buy({state}) {
               className="form-control"
               id="eth"
               placeholder="Ether"
+              autoComplete='off'
             />
           </div>
           <button
